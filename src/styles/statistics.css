@@ -1,0 +1,230 @@
+.Statistics {
+    position: absolute;
+    width: 40%;
+  
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    text-align: center;
+  }
+  
+  .Statistics h1 {
+    color: rgb(61, 76, 88);
+    font-size: 2.5rem;
+    font-style: italic;
+    margin-bottom: 50px;
+  }
+  
+  .Statistics-totalTime {
+    display: flex;
+    background-color: rgb(186, 143, 255);
+    border: 3px solid rgb(135, 88, 209);
+  
+    height: 150px;
+  
+    justify-content: center;
+  }
+  
+  .Statistics-totalTime p {
+    font-size: 1.5rem;
+    align-self: center;
+  }
+  
+  .Statistics-totalTime i {
+    font-size: 4rem;
+  
+    margin-top: 5%;
+    margin-right: 5%;
+  }
+  
+  .Statistics h2 {
+    color: rgb(61, 76, 88);
+    font-size: 2rem;
+    font-style: italic;
+  
+    margin: 20px 0 0 0;
+  }
+  
+  .Statistics-sortingTasks {
+    background-color: rgb(219, 235, 248);
+    border: 3px solid rgb(183, 198, 211);
+  
+    margin-top: 20px;
+  }
+  
+  .single-sorted-task {
+    display: flex;
+    background-color: white;
+    border: 2px solid rgb(207, 221, 233);
+    border-radius: 80px;
+    margin: 20px 40px;
+    padding: 30px;
+  }
+  
+  .single-sorted-task p {
+    margin-left: 10%;
+    text-overflow: ellipsis;
+    overflow: hidden;
+  }
+  
+  .single-sorted-task h3 {
+    color: rgb(140, 0, 255);
+    position: absolute;
+    left: 80%;
+  }
+  
+  .number-circle {
+    color: rgb(207, 221, 233);
+    font-size: 1.5rem;
+  
+    display: flex;
+    position: absolute;
+    align-self: center;
+    background-color: white;
+    padding: 30px;
+    border: 2px solid rgb(207, 221, 233);
+    border-radius: 100%;
+    left: 60px;
+  }
+  
+  .number {
+    position: absolute;
+    display: flex;
+    top: 15px;
+    left: 16px;
+    width: 100%;
+    min-width: 200%;
+  }
+  
+  .number-2d {
+    position: absolute;
+    display: flex;
+    top: 15px;
+    left: 10px;
+    width: 100%;
+    min-width: 200%;
+  }
+  
+  .number-3d {
+    position: absolute;
+    width: 100%;
+    min-width: 200%;
+    display: flex;
+    top: 15px;
+    left: 4px;
+    padding: 0px;
+  }
+  
+  @media screen and (max-width: 1800px) {
+    .Statistics {
+      position: relative;
+      width: 50%;
+    }
+  
+    .fa-hourglass-start {
+      position: relative;
+    }
+  }
+  
+  @media screen and (max-width: 1500px) {
+    .Statistics {
+      width: 70%;
+    }
+  
+    .Statistics-totalTime {
+      padding: 0;
+    }
+  
+    .Statistics-totalTime i {
+      margin: 0;
+      align-self: center;
+      margin-right: 5%;
+      margin-left: 5%;
+    }
+  
+    .Statistics-totalTime p {
+      font-size: 1.5rem;
+      margin: 0;
+      padding: 0;
+    }
+  
+    .fa-hourglass-start {
+      left: -10px;
+      display: flex;
+      margin: 0;
+      padding: 0;
+      justify-content: center;
+    }
+  }
+  
+  @media screen and (max-width: 1000px) {
+    .Statistics {
+      width: 90%;
+    }
+  
+    .single-sorted-task p {
+      max-width: 60%;
+    }
+  }
+  
+  @media screen and (max-width: 740px) {
+    .single-sorted-task {
+      width: 95%;
+      margin-left: 3%;
+    }
+  
+    .number-circle {
+      left: 5%;
+    }
+  
+    .number {
+      left: 20%;
+    }
+  
+    .number-2d {
+      left: 8%;
+    }
+  
+    .number-3d {
+      left: -5%;
+    }
+  
+    .single-sorted-task p {
+      margin-left: 20%;
+      max-width: 40%;
+    }
+  
+    .single-sorted-task h3 {
+      left: 70%;
+    }
+  }
+  
+  @media screen and (max-width: 650px) {
+    .Statistics-totalTime p {
+      font-size: 1.2rem;
+      margin-right: 2%;
+    }
+  }
+  
+  @media screen and (max-width: 420px) {
+    .Statistics-totalTime p {
+      margin: 0;
+      margin-right: 20%;
+    }
+  
+    .Statistics-totalTime i {
+      font-size: 3rem;
+      margin-left: 10%;
+    }
+  }
+  
+  @media screen and (max-width: 390px) {
+    .Statistics {
+      position: absolute;
+      display: flexbox;
+  
+      left: 4%;
+      width: 100%;
+    }
+  }
