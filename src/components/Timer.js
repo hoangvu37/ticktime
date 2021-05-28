@@ -35,7 +35,7 @@ function Timer({ toggledTask, getTime }) {
   });
 
   function start() {
-    if (toggledTask || toggledTask !== "") {
+    if (toggledTask || toggledTask == "") {
       if (isStopwatch) {
         increment.current = setInterval(
           () => setTime((time) => time + 1),
